@@ -1,0 +1,23 @@
+<h3>Buscar por region <small>{{ regionActiva | titlecase }}</small></h3>
+
+<h5>Seleccione la region</h5>
+<!-- [class.btn-primary] = "region === regionActiva" -->
+<!--  [ngClass]="{
+            'btn-primery': regionActiva === region,
+            'btn-outline-primary': regionActiva !== region
+
+        }" -->
+<div class="row">
+    <div class="col">
+        <button 
+        (click)="activarRegion(region)" 
+        [class]="getClaseCSS(region)"
+        *ngFor="let region of regiones">{{region | titlecase}}</button>
+    </div>
+</div>
+
+<br>
+<div class="col">
+
+    <app-region-tabla [region]="region"></app-region-tabla>
+</div>
