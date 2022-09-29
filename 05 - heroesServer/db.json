@@ -8,14 +8,6 @@
   ],
   "heroes": [
     {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne"
-    },
-    {
       "id": "dc-superman",
       "superhero": "Superman",
       "publisher": "DC Comics",
@@ -104,14 +96,6 @@
       "characters": "Steve Rogers"
     },
     {
-      "id": "marvel-iron",
-      "superhero": "Iron Man",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Tony Stark",
-      "first_appearance": "Tales of Suspense #39",
-      "characters": "Tony Stark"
-    },
-    {
       "id": "marvel-thor",
       "superhero": "Thor",
       "publisher": "Marvel Comics",
@@ -126,14 +110,6 @@
       "alter_ego": "Bruce Banner",
       "first_appearance": "The Incredible Hulk #1",
       "characters": "Bruce Banner"
-    },
-    {
-      "id": "marvel-wolverine",
-      "superhero": "Wolverine",
-      "publisher": "Marvel Comics",
-      "alter_ego": "James Howlett",
-      "first_appearance": "The Incredible Hulk #180",
-      "characters": "James Howlett"
     },
     {
       "id": "marvel-daredevil",
@@ -153,19 +129,39 @@
     },
     {
       "id": "marvel-cyclops",
-      "superhero": "Cyclops",
+      "superhero": "Shun",
       "publisher": "Marvel Comics",
-      "alter_ego": "Scott Summers",
-      "first_appearance": "X-Men #1",
-      "characters": "Scott Summers"
+      "alter_ego": "Shun",
+      "first_appearance": "Ahun",
+      "characters": "",
+      "alt_img": "https://i.pinimg.com/564x/44/25/d9/4425d9b7061b1c1119684e92e10351f6.jpg"
     },
     {
-      "id": "marvel-silver",
-      "superhero": "Silver Surfer",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Norrin Radd",
-      "first_appearance": "The Fantastic Four #48",
-      "characters": "Norrin Radd"
+      "superhero": "Mio",
+      "alter_ego": "Mio",
+      "characters": "",
+      "first_appearance": "",
+      "publisher": "DC Comics",
+      "alt_img": "https://i.pinimg.com/564x/6a/c8/30/6ac830975a867efd3795f22e299182f9.jpg",
+      "id": "VgbhtI8"
+    },
+    {
+      "superhero": "Miyano",
+      "alter_ego": "Miyano",
+      "characters": "",
+      "first_appearance": "",
+      "publisher": "DC Comics",
+      "alt_img": "https://i.pinimg.com/564x/f4/b5/c9/f4b5c962e55ed01ce5c030d274c8face.jpg",
+      "id": "ZkZ1TCQ"
+    },
+    {
+      "superhero": "Sanji",
+      "alter_ego": "Sanji",
+      "characters": "",
+      "first_appearance": "Sanji",
+      "publisher": "DC Comics",
+      "alt_img": "https://i.pinimg.com/originals/67/71/5d/67715d6e840c461f4c611fa98c77c1da.jpg",
+      "id": "H43SL74"
     }
   ]
 }
