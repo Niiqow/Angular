@@ -1,79 +1,88 @@
 export interface PaisSmall {
     name:         Name;
+    cca3:         string;
+    
+}
+export interface Name {
+    common:     string;
+   
+}
+
+
+
+export interface Pais {
+    name:         Name;
     tld:          string[];
     cca2:         string;
     ccn3:         string;
     cca3:         string;
-    cioc?:        string;
+    cioc:         string;
     independent:  boolean;
-    status:       Status;
+    status:       string;
     unMember:     boolean;
-    currencies:   { [key: string]: Currency };
+    currencies:   Currencies;
     idd:          Idd;
     capital:      string[];
     altSpellings: string[];
-    region:       Region;
-    subregion:    Subregion;
+    region:       string;
+    subregion:    string;
     languages:    Languages;
     translations: { [key: string]: Translation };
     latlng:       number[];
     landlocked:   boolean;
-    borders?:     string[];
+    borders:      string[];
     area:         number;
     demonyms:     Demonyms;
     flag:         string;
     maps:         Maps;
     population:   number;
-    gini?:        { [key: string]: number };
-    fifa?:        string;
+    gini:         Gini;
+    fifa:         string;
     car:          Car;
     timezones:    string[];
-    continents:   Continent[];
+    continents:   string[];
     flags:        CoatOfArms;
     coatOfArms:   CoatOfArms;
-    startOfWeek:  StartOfWeek;
+    startOfWeek:  string;
     capitalInfo:  CapitalInfo;
-    postalCode?:  PostalCode;
+    postalCode:   PostalCode;
 }
 
 export interface CapitalInfo {
-    latlng?: number[];
+    latlng: number[];
 }
 
 export interface Car {
-    signs?: string[];
-    side:   Side;
-}
-
-export enum Side {
-    Left = "left",
-    Right = "right",
+    signs: string[];
+    side:  string;
 }
 
 export interface CoatOfArms {
-    png?: string;
-    svg?: string;
+    png: string;
+    svg: string;
 }
 
-export enum Continent {
-    NorthAmerica = "North America",
-    Oceania = "Oceania",
-    SouthAmerica = "South America",
+export interface Currencies {
+    CLP: Clp;
 }
 
-export interface Currency {
+export interface Clp {
     name:   string;
     symbol: string;
 }
 
 export interface Demonyms {
-    eng:  EngClass;
-    fra?: EngClass;
+    eng: Eng;
+    fra: Eng;
 }
 
-export interface EngClass {
+export interface Eng {
     f: string;
     m: string;
+}
+
+export interface Gini {
+    "2017": number;
 }
 
 export interface Idd {
@@ -82,27 +91,7 @@ export interface Idd {
 }
 
 export interface Languages {
-    bjz?: string;
-    eng?: EngEnum;
-    spa?: SPA;
-    aym?: string;
-    grn?: string;
-    que?: string;
-    jam?: string;
-    fra?: string;
-    nld?: string;
-    pap?: string;
-    kal?: string;
-    hat?: string;
-    por?: string;
-}
-
-export enum EngEnum {
-    English = "English",
-}
-
-export enum SPA {
-    Spanish = "Spanish",
+    spa: string;
 }
 
 export interface Maps {
@@ -113,7 +102,11 @@ export interface Maps {
 export interface Name {
     common:     string;
     official:   string;
-    nativeName: { [key: string]: Translation };
+    nativeName: NativeName;
+}
+
+export interface NativeName {
+    spa: Translation;
 }
 
 export interface Translation {
@@ -123,25 +116,5 @@ export interface Translation {
 
 export interface PostalCode {
     format: string;
-    regex?: string;
-}
-
-export enum Region {
-    Americas = "Americas",
-}
-
-export enum StartOfWeek {
-    Monday = "monday",
-    Sunday = "sunday",
-}
-
-export enum Status {
-    OfficiallyAssigned = "officially-assigned",
-}
-
-export enum Subregion {
-    Caribbean = "Caribbean",
-    CentralAmerica = "Central America",
-    NorthAmerica = "North America",
-    SouthAmerica = "South America",
+    regex:  string;
 }
